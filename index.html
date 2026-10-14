@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9ed">
+  <meta name="description" content="Is Mum Dead Yet? An affectionately irreverent DIY project about finding everyday signs of activity and a little peace of mind when someone you love lives alone.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Is Mum Dead Yet? | A little dark humour. A lot of love.">
+  <meta property="og:description" content="A home-awareness experiment, inspired by one mum's very reasonable question.">
+  <meta property="og:image" content="assets/mum-illustration.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Is Mum Dead Yet? | The HomePulse experiment</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Is Mum Dead Yet? home"><span class="pulse-mark" aria-hidden="true">♡</span> <span>Is Mum Dead Yet<span class="accent">?</span></span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#idea">The idea</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#story">Our story</a>
+        <a class="nav-pill" href="#build">Build your own <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> A very human problem. A slightly questionable name.</div>
+          <h1 id="hero-title">Is Mum <span>Dead Yet?</span></h1>
+          <p class="handwritten hero-aside">Peace of mind for worried children. <span aria-hidden="true">♡</span></p>
+          <p class="hero-lead">A little dark humour. A lot of love. And an experiment in using everyday activity to help us know when to check in on someone we care about.</p>
+          <div class="button-row">
+            <a class="button primary" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#story">Read the real story</a>
+          </div>
+          <p class="status-line"><span class="status-dot" aria-hidden="true"></span> A real DIY experiment, not a product for sale</p>
+        </div>
+        <div class="hero-art">
+          <span class="bubble handwritten">“Still here!<br>Had a cuppa.” <span aria-hidden="true">♡</span></span>
+          <img src="assets/mum-illustration.svg" width="700" height="620" alt="Illustration of a smiling older woman relaxing with a cup of tea and a cat in her living room.">
+          <span class="art-caption"><span aria-hidden="true">♥</span> Independent living, with a little extra reassurance</span>
+        </div>
+      </div>
+      <div class="shell"><div class="hero-ribbon">Because sometimes a small sign of everyday life can mean a lot.</div></div>
+    </section>
+
+    <section class="section intro" id="idea" aria-labelledby="idea-title">
+      <div class="shell">
+        <div class="section-heading centered">
+          <span class="kicker">THE IDEA</span>
+          <h2 id="idea-title">Not watching Mum.<br><em>Just joining the dots.</em></h2>
+          <p>When somebody lives alone, it's natural to wonder whether they're up, about and doing okay. What if the ordinary things they already do could offer a little reassurance, without cameras in the living room or another gadget they have to remember to wear?</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature peach">
+            <div class="icon-circle" aria-hidden="true">⌁</div>
+            <h3>Movement</h3>
+            <p>A tiny beacon on Mum's walking trolley and receivers around the house may help estimate which room the trolley is in and when it moves.</p>
+          </article>
+          <article class="feature blue">
+            <div class="icon-circle" aria-hidden="true">✳</div>
+            <h3>Little interactions</h3>
+            <p>A press of the lamp button is a real, timestamped interaction. Even simple daily actions can provide useful context.</p>
+          </article>
+          <article class="feature lilac">
+            <div class="icon-circle" aria-hidden="true">⌂</div>
+            <h3>Doors & visitors</h3>
+            <p>Door contacts, doorbells and compatible devices may help build a timeline of visitors and household activity.</p>
+          </article>
+          <article class="feature mint">
+            <div class="icon-circle" aria-hidden="true">♡</div>
+            <h3>A little less guessing</h3>
+            <p>Combine separate clues into a clearer picture, so unusual quiet periods can prompt a thoughtful human check-in.</p>
+          </article>
+        </div>
+        <p class="caveat">It's important to say what this <strong>doesn't</strong> do: a sensor cannot tell whether a person is alive, safe or well. The aim is awareness and reassurance, not proof or emergency detection.</p>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="kicker">HOW IT WORKS</span>
+          <h2 id="how-title">Small gadgets.<br><em>One bigger picture.</em></h2>
+          <p>The actual HomePulse design uses a few little receivers, a beacon on the trolley and a Raspberry Pi to put the clues together. You don't need to understand the programming to understand the idea.</p>
+        </div>
+        <div class="how-grid">
+          <div class="house-card" role="img" aria-label="Illustrative house layout with Bluetooth receivers in five rooms and a walking trolley carrying a Bluetooth beacon in the front room.">
+            <div class="house-roof"><span>HOME SWEET HOME</span> <span aria-hidden="true">♡</span></div>
+            <div class="floorplan">
+              <div class="room room-front"><span class="room-label">Front room</span><span class="sensor" aria-hidden="true">⌁</span><span class="trolley" aria-hidden="true">♧</span><span class="beacon-label">beacon on trolley</span></div>
+              <div class="room room-kitchen"><span class="room-label">Kitchen</span><span class="sensor" aria-hidden="true">⌁</span><span class="room-doodle" aria-hidden="true">◫</span></div>
+              <div class="room room-bedroom"><span class="room-label">Bedroom</span><span class="sensor" aria-hidden="true">⌁</span><span class="room-doodle" aria-hidden="true">▤</span></div>
+              <div class="room room-bath"><span class="room-label">Bathroom</span><span class="sensor" aria-hidden="true">⌁</span><span class="room-doodle" aria-hidden="true">◡</span></div>
+              <div class="room room-dining"><span class="room-label">Dining room</span><span class="sensor" aria-hidden="true">⌁</span><span class="room-doodle" aria-hidden="true">▦</span></div>
+            </div>
+            <p class="diagram-key"><span class="sensor mini" aria-hidden="true">⌁</span> Bluetooth receiver &nbsp;&nbsp; <span class="trolley mini" aria-hidden="true">♧</span> Walking trolley + beacon</p>
+            <p class="diagram-note">Illustration only. Receivers estimate the <strong>trolley's</strong> room, not a person's exact position.</p>
+          </div>
+          <div class="steps">
+            <article class="step"><span class="step-number">01</span><div><h3>A little beacon travels with the trolley</h3><p>It sends a Bluetooth signal. Mum doesn't need a phone, an app, or to press anything for this part.</p></div></article>
+            <article class="step"><span class="step-number">02</span><div><h3>Receivers listen around the house</h3><p>Small USB-powered devices compare signals to estimate the room. Real homes need testing and calibration.</p></div></article>
+            <article class="step"><span class="step-number">03</span><div><h3>A Raspberry Pi connects the dots</h3><p>A tiny local computer can combine movement clues with other events, like the lamp button or front-door activity.</p></div></article>
+            <article class="step"><span class="step-number">04</span><div><h3>Family can check the bigger picture</h3><p>The goal is a simple view of recent activity, with clear timestamps, uncertainty and device health.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dashboard-section" aria-labelledby="dashboard-title">
+      <div class="shell dashboard-grid">
+        <div class="dashboard-copy">
+          <span class="kicker">THE KIND OF VIEW WE'RE AIMING FOR</span>
+          <h2 id="dashboard-title">A small update.<br><em>A big sigh of relief.</em></h2>
+          <p>You don't need a minute-by-minute surveillance feed. Often you just want to know whether anything has happened today, what kind of activity it was, and how recently it happened.</p>
+          <p>We're exploring ways to show <strong>the last observation</strong>, <strong>the last likely resident activity</strong>, and <strong>the last deliberate interaction</strong> as different facts. That distinction matters.</p>
+          <div class="quote-tag handwritten">“A lamp button pressed at 2am is a tiny piece of good news.” ♡</div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone" aria-label="Illustrative mock-up of a possible activity dashboard. Not actual live data.">
+            <div class="phone-top"><span>9:41</span><span aria-hidden="true">●●●  ▰</span></div>
+            <div class="app-heading"><span class="app-house" aria-hidden="true">⌂</span><div><strong>HomePulse</strong><small>Mum's home</small></div></div>
+            <div class="demo-label">ILLUSTRATIVE EXAMPLE · NOT LIVE DATA</div>
+            <div class="app-banner"><span class="app-check" aria-hidden="true">✓</span><div><strong>Recent activity seen</strong><small>This is not a wellbeing check</small></div></div>
+            <h3>Today's little moments</h3>
+            <ul class="event-list">
+              <li><span class="event-icon peach-icon" aria-hidden="true">⌁</span><span><strong>Trolley moved</strong><small>Front room → Kitchen</small></span><time>10:24</time></li>
+              <li><span class="event-icon lavender-icon" aria-hidden="true">✳</span><span><strong>Lamp button used</strong><small>Deliberate interaction</small></span><time>09:12</time></li>
+              <li><span class="event-icon green-icon" aria-hidden="true">⌂</span><span><strong>Front door opened</strong><small>Visitor context unknown</small></span><time>08:47</time></li>
+            </ul>
+            <div class="phone-foot"><span class="online-dot"></span> 5 receivers reporting <span>Sample view</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story" aria-labelledby="story-title">
+      <div class="shell story-grid">
+        <div class="story-badge" aria-hidden="true"><span>WHY<br>THIS<br>EXISTS</span><span class="story-heart">♡</span></div>
+        <div class="story-copy">
+          <span class="kicker">THE REAL STORY</span>
+          <h2 id="story-title">“What if I die in the night<br>and nobody knows?”</h2>
+          <p>It's not a question anyone particularly enjoys hearing from their mum. But it's a completely understandable thing to worry about when you live alone.</p>
+          <p>So instead of treating it as an unsolvable worry, I started wondering what everyday evidence we could gather without asking Mum to change how she lives. Her walking trolley, a few Bluetooth receivers, a lamp button and a little computer became the starting point for <strong>HomePulse</strong>.</p>
+          <p>Then some friends, facing similar worries about their own parents, gave the whole idea its gloriously inappropriate nickname. It stuck.</p>
+          <p class="story-emphasis">The name is a joke. The care behind it isn't.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principles-section" aria-labelledby="principles-title">
+      <div class="shell">
+        <div class="section-heading centered compact">
+          <span class="kicker">WHAT MATTERS</span>
+          <h2 id="principles-title">A bit of tech.<br><em>Quite a lot of heart.</em></h2>
+        </div>
+        <div class="principles-grid">
+          <article><span aria-hidden="true">♥</span><h3>Independence first</h3><p>Less for Mum to carry, remember or learn. The technology should fit her life, not the other way around.</p></article>
+          <article><span aria-hidden="true">◉</span><h3>Privacy by design</h3><p>Use modest, useful signals and keep detailed data local where practical. This doesn't need indoor cameras.</p></article>
+          <article><span aria-hidden="true">✓</span><h3>Honest about uncertainty</h3><p>Visitors, missing sensors and an unmoving trolley can all mislead. A timeline is a clue, not a verdict.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section build-section" id="build" aria-labelledby="build-title">
+      <div class="shell build-card">
+        <div class="build-text">
+          <span class="kicker">CURIOUS? SO ARE WE.</span>
+          <h2 id="build-title">Not for sale.<br><em>Here to spark an idea.</em></h2>
+          <p>This is an ongoing experiment, and the hard parts are genuinely hard: different homes, Bluetooth calibration, integrations, reliability and support. We're sharing the thinking so someone else might build their own version, improve it, or simply realise that there are options worth exploring.</p>
+          <div class="button-row">
+            <a class="button white" href="https://github.com/digitalunity/homepulse" target="_blank" rel="noopener noreferrer">Explore HomePulse <span aria-hidden="true">↗</span></a>
+            <a class="button outline-white" href="https://github.com/digitalunity/is-mum-dead-yet" target="_blank" rel="noopener noreferrer">This site's source <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="build-caption">DIY inspiration, not a setup guide for a guaranteed safety device.</p>
+        </div>
+        <div class="build-decoration" aria-hidden="true"><span class="build-mug">☕</span><span class="build-heart">♡</span><span class="build-stars">✳ ✧</span></div>
+      </div>
+    </section>
+
+    <section class="section disclaimer-section" aria-labelledby="disclaimer-title">
+      <div class="shell disclaimer">
+        <div class="disclaimer-icon" aria-hidden="true">i</div>
+        <div>
+          <h2 id="disclaimer-title">One important thing</h2>
+          <p>HomePulse is an experimental home-awareness project, not a medical device, fall detector, life-sign monitor or emergency-response service. Activity can be missed or misattributed, and a person can be unwell despite recent activity. If you're worried about somebody, contact them or arrange a check. In an emergency, use the appropriate emergency services.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-grid"><div><div class="footer-title">Is Mum Dead Yet<span>?</span> <span aria-hidden="true">♡</span></div><p>Built with love, a Raspberry Pi, a handful of sensors and a slightly inappropriate sense of humour.</p></div><div class="footer-links"><a href="#top">Back to top ↑</a><a href="https://github.com/digitalunity/homepulse">HomePulse</a><a href="https://github.com/digitalunity/is-mum-dead-yet/issues">Share an idea</a></div></div>
+    <div class="shell footer-bottom"><span>A HomePulse storytelling experiment. Not a commercial product.</span><span>Made to start a conversation, not to replace one.</span></div>
+  </footer>
+</body>
+</html>
