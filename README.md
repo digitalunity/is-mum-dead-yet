@@ -18,7 +18,9 @@ The website explains the idea in everyday language. HomePulse remains the engine
 
 This repository contains a static site designed for GitHub Pages with no application server, cookies, tracking scripts, or third-party asset requests.
 
-Once Pages is enabled, it can publish from `main` at the repository root. No custom domain is needed.
+The site is published via GitHub Pages from `main` at [is-mum-dead-yet.github.io](https://is-mum-dead-yet.github.io/). No custom domain is needed.
+
+The [real-life questions](https://is-mum-dead-yet.github.io/questions.html) page explains the doorbell, visitor, trolley, lamp-button, phone-battery and privacy scenarios behind the project, including limitations and experimental status.
 
 ## Direction
 
